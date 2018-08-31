@@ -1,35 +1,33 @@
 ﻿<!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<script src="game.js"></script>
-		<!--<script src="game1.js"></script>-->
-		<title>Игра</title>
-	</head>
-	<body>
-		<style>
-			td.square {
-				color: #0e1758;
-				}
-			td.result {
-				color: #0d1658;
-			}
-		</style>
-		<input type = "text" id = "user_input" onchange = "change()" autofocus placeholder = "число 0 - 10" autocomplete = "off">
-
-		<table cellpadding = "3" border = "1" bgcolor = #f0e68c>
-			<tr>
-				<td class="result" id = "response_label" height = "15px"></td>
-			</tr>
-			<tr>
-				<td class = "square" id = "sqrt">&#8730: </td>
-			</tr>
-			<tr>
-				<td id = "right_answer">Попытки</td>
-			</tr>
-			<tr>
-				<td><input onclick = "location.reload()" value = "Перезагрузить" type = "button"></td>
-			</tr>
-		</table>
-	</body>
+<head>
+	<meta charset="utf-8">
+	<script src="game.js"></script>
+	<!--<script src="game1.js"></script>-->
+	<link rel="stylesheet" href="game.css">
+	<title>Игра</title>
+</head>
+<body>
+<table class="game" cellpadding = "3" align="center">
+	<tr>
+		<td><input type = "text" id = "user_input" onchange = "change()" autofocus placeholder = "число 0 - 10" autocomplete = "off"></td>
+	</tr>
+	<tr>
+		<td class="result" id = "response_label" height = "15px"></td>
+	</tr>
+	<tr>
+		<td id = "right_answer">Попытки</td>
+	</tr>
+	<tr>
+		<td><input class="mybutton" onclick = "location.reload()" value = "Перезагрузить" type = "button"></td>
+	</tr>
+</table>
+<table class="time_table">
+	<tr>
+		<td id="time_td">
+			<script src="time.js"></script>
+		</td>
+	</tr>
+</table>
+</body>
 </html>
