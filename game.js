@@ -21,7 +21,7 @@ function change() {
 		response_label.innerHTML = "много";
 	}
 	else if(user_input.value==rand_numb){
-		document.body.innerHTML = '<span class = "victory">Поздравляем, Вы выиграли!!! <br/><button class="new_game" onclick = "location.reload()">Сыграть заного!</button></span>'
+		document.body.innerHTML = '<span class = "victory">Поздравляем, Вы выиграли!!! <br/><button class="new_game" onclick = "location.reload()">Сыграть заново!</button></span>'
 	}
 
 }
