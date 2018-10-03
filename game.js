@@ -10,9 +10,12 @@ function change() {
 	response_label = document.getElementById("response_label");
 	right_answer = document.getElementById("right_answer");
     if (user_input.value>10||user_input.value<0) {
-    	response_label.innerHTML = "недопустимое значение";
+    	response_label.innerHTML = "НЕДОПУСТИМОЕ ЗНАЧЕНИЕ";
     	return;
     }
+    if (user_input.value!==typeof 'number'){response_label.innerHTML = "Это не цифры";
+
+}
     right_answer.innerHTML = "Попытка№ "+counter();
 	if(user_input.value<rand_numb) {	
 		response_label.innerHTML = "мало";
