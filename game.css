@@ -1,6 +1,7 @@
 body {
     background-image: url("http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2017/04/08232156/DSC03756-1200x800.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 td.square {
     color: #0e1758;
@@ -23,6 +24,9 @@ td.result {
     color: #faffcb;
     font-size: 30px;
     font-family: Ruslan Display;
+    @media  {
+        
+    }
     text-align: center;
     -webkit-border-radius: 8px;
 
