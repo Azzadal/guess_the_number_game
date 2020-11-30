@@ -1,2 +1,2 @@
 # game
-игра угадай число
+guess the number game
